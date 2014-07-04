@@ -31,3 +31,9 @@ Meteor.startup ->
           email: email
           password: password
           profile: AccountsEntry.settings.defaultProfile || {}
+
+    updateRegistrationStatus: (email)->
+    
+      UserRegistration.update { email : email }, { $set : { status : "active"} }, {upsert : true }
+      return
+
