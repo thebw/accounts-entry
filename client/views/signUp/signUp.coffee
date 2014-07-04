@@ -139,6 +139,9 @@ AccountsEntry.entrySignUpEvents = {
             'USERNAME_AND_EMAIL',
             'EMAIL_ONLY'], AccountsEntry.settings.passwordSignupFields)
           userCredential = if isEmailSignUp then email else username
+
+          Meteor.call "updateRegistrationStatus", email
+
           Meteor.loginWithPassword userCredential, password, (error) ->
             if error
               T9NHelper.accountsError error
