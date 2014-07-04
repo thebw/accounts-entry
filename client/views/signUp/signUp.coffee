@@ -123,7 +123,7 @@ AccountsEntry.entrySignUpEvents = {
       return
 
 
-    Meteor.call 'entryValidateSignupCode', signupCode, (err, valid) ->
+    Meteor.call 'entryValidateSignupCode', signupCode, email, (err, valid) ->
       if valid
         newUserData =
           username: username
