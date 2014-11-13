@@ -1,8 +1,8 @@
 Package.describe({
     summary: "Make signin and signout their own pages with routes.",
-    version: '1.0.0',
+    version: '1.0.1',
     name: "chandrasekaran:accounts-entry",
-    githubUrl: 'https://github.com/Differential/accounts-entry',
+    githubUrl: 'https://github.com/thebw/accounts-entry.git',
 });
 
 Package.onUse(function(api) {
@@ -32,8 +32,6 @@ Package.onUse(function(api) {
     'client/views/signIn/signIn.coffee',
     'client/views/signUp/signUp.html',
     'client/views/signUp/signUp.coffee',
-    'client/views/signUp/extraSignUpFields.html',
-    'client/views/signUp/extraSignUpFields.coffee',
     'client/views/forgotPassword/forgotPassword.html',
     'client/views/forgotPassword/forgotPassword.coffee',
     'client/views/resetPassword/resetPassword.html',
@@ -44,19 +42,12 @@ Package.onUse(function(api) {
     'client/views/error/error.coffee',
     'client/views/accountButtons/accountButtons.html',
     'client/views/accountButtons/_wrapLinks.html',
-    'client/views/accountButtons/signedIn.html',
     'client/views/accountButtons/accountButtons.coffee',
     'client/t9n/english.coffee',
     'client/t9n/french.coffee',
     'client/t9n/german.coffee',
-    'client/t9n/italian.coffee',
     'client/t9n/polish.coffee',
     'client/t9n/spanish.coffee',
-    'client/t9n/swedish.coffee',
-    'client/t9n/portuguese.coffee',
-    'client/t9n/slovene.coffee',
-    'client/t9n/russian.coffee',
-    'client/t9n/arabic.coffee'
   ], 'client');
 
   // SERVER
